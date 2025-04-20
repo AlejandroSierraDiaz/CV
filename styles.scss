@@ -1,0 +1,106 @@
+//Importamos las funciones
+@import "./node_modules/bootstrap/scss/functions";
+
+$primary: #3498db; //Azul
+$secondary: #7f8c8d; //Gris
+$accent: #f39c12; //Naranja
+$body-bg: #f4f6f8; //Fondo Blanco
+$body-color: #333; //Color Negro
+$heading-color: #2c3e50; //Azul oscuro para (h1, h2, h3)
+
+$font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; //Fuente para el cuerpo
+$font-family-headings: 'Montserrat', sans-serif; //Fuente para los encabezados
+
+//Importamos los estilos
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+body {
+    font-family: $font-family-base; //Aplica la fuente
+    background-color: $body-bg; //Establece el color de fondo
+    color: $body-color; //El color principal
+    line-height: 1.6; //Para que se vea mejor el texto
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-headings; //La fuente de los encabezados
+    color: $heading-color; //El color de los encabezados
+    margin-bottom: 0.75rem; //Espacio debajo de los encabezados
+}
+
+h1 {
+    font-size: 2.5rem; //El tamaño de fuente para el título
+    font-weight: 700; //Hace el título más grande
+    margin-bottom: 1rem; //Mas espacio debajo del título
+}
+
+h2 {
+    font-size: 2rem; //El tamaño de fuente
+    border-bottom: 2px solid $secondary; //Una línea para separar las secciones
+    padding-bottom: 0.5rem; //Espacio entre el texto del subtítulo y la línea
+    margin-bottom: 1.5rem; //Mas espacio debajo del subtítulo
+}
+
+h3 {
+    font-size: 1.5rem; //Tamaño de fuente
+    font-weight: 600; //Resalta el texto
+    margin-bottom: 0.5rem; //Espacio debajo del subsección
+}
+
+.lead {
+    color: $secondary; //Aplica el color secundario
+    font-style: normal; //Asegura que no esté en cursiva
+    font-size: 1.1rem; //Un poco mas grande que el texto normal
+    margin-bottom: 1rem; //Espacio 
+}
+
+.container {
+    background-color: white; //Fondo blanco
+    padding: 2rem; //Espacio alrededor del contenido
+    border-radius: 8px; //Bordes redondeados
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); //Sombra
+}
+
+header {
+    text-align: left; //Alinea el contenido del encabezado a la izquierda
+    margin-bottom: 2rem; //Espacio
+}
+
+header h1 {
+    margin-bottom: 0.25rem; //Menos espacio
+}
+
+header p.lead {
+    margin-bottom: 0.5rem; //Menos espacio
+}
+
+header div a, header div span {
+    color: $body-color; //Aqui ponemos el color del texto para los enlaces e información de contacto
+    margin-right: 0.75rem; //Espacio entre los elementos de contacto
+    text-decoration: none; //Esto elimina el subrayado por defecto de los enlaces
+}
+
+header div a:hover {
+    color: $primary; //Esto cambia el color al pasar el ratón por encima de los enlaces
+}
+
+section {
+    margin-bottom: 2rem; //Espacio
+}
+
+strong {
+    font-weight: 600; //Resalta el texto
+}
+
+.text-muted {
+    color: lighten($secondary, 10%); //Aclara un poco el color del texto secundario
+    font-style: italic; //Aplica cursiva
+}
+
+footer {
+    text-align: center; //Centra el texto del pie de página
+    margin-top: 3rem; //Espacio arriba del pie de página
+    padding-top: 1rem; //Espacio del pie de página
+    border-top: 1px solid $secondary; //Línea divisoria en la parte superior
+    color: $secondary; //Color del texto
+    font-size: 0.9rem; //Tamaño de fuente más pequeño
+}
